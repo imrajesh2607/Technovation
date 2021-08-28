@@ -39,6 +39,7 @@ while(flag):
         # Printing Output
         speed = ran.randint(0,120)                # Speed of Car (Input from ELM 327)
         safe_speed = ran.randint(0,120)           # Safe speed of car (Using OpenCV by detecting number in sign board)
+        print(f'Traffic Density is: {count}')
         print(f'Safe Speed Limit is {safe_speed}km/hr. Speed of Your car is {speed}km/hr')
         if speed>safe_speed:
             SpeakText('Safe Speed Limit is breached. Slow down your car.')
