@@ -9,11 +9,11 @@ def SpeakText(command):
     engine.runAndWait()
 
 car_cascade = cv2.CascadeClassifier('cars.xml')
-a = ran.sample(range(1,4),3)
 flag = True
 cnt=1
 # loop 
 while(flag):
+    a = ran.sample(range(1,4),3)
     movement = 0
     while movement<3:
         print(f'Case {cnt}: ')
